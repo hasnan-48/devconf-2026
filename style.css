@@ -296,3 +296,139 @@ ul {
 .full-width {
   width: 100%;
 }
+/* ===== Hackathon Section ===== */
+.hackathon-section {
+  background-color: var(--color-dark);
+  color: white;
+  padding: 100px 24px;
+  text-align: center;
+}
+
+.hackathon-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hackathon-tag {
+  display: inline-block;
+  background-color: var(--color-accent-light);
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.hackathon-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.hackathon-subtitle {
+  color: #cfd8d8;
+  font-size: 1rem;
+  margin-bottom: 48px;
+}
+
+/* Countdown Timer */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.countdown-box {
+  background-color: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 20px 24px;
+  min-width: 90px;
+}
+
+.countdown-number {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--color-accent);
+}
+
+.countdown-label {
+  font-size: 0.8rem;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Prize Cards */
+.prize-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.prize-card {
+  background-color: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 32px 20px;
+}
+
+.prize-card-featured {
+  background-color: var(--color-accent);
+  border: none;
+  transform: scale(1.05);
+}
+
+.prize-medal {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.prize-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.prize-amount {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.prize-desc {
+  font-size: 0.85rem;
+  color: #d8d8d8;
+}
+
+.prize-card-featured .prize-desc {
+  color: rgba(255,255,255,0.9);
+}
+
+.hackathon-btn {
+  font-size: 1rem;
+  padding: 14px 32px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .prize-grid {
+    grid-template-columns: 1fr;
+  }
+  .prize-card-featured {
+    transform: scale(1);
+  }
+  .countdown {
+    gap: 12px;
+  }
+  .countdown-box {
+    min-width: 70px;
+    padding: 14px 16px;
+  }
+}

@@ -91,3 +91,43 @@ ul {
   font-size: 0.95rem;
   color: #333;
 }
+/* Hero */
+.hero {
+  position: relative;
+  background-image: url(/images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(13, 43, 43, 0.75); /* dark teal overlay, matches theme */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--color-accent); /* "Connect" word এ coral color highlight */
+}
+
+.hero p {
+  font-size: 1.05rem;
+  color: #e6e6e6;
+  margin-bottom: 32px;
+}

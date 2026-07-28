@@ -159,7 +159,7 @@ ul {
 }
 
 .speaker-card:hover {
-  box-shadow: 0 8px 24px rgba(13, 43, 43, 0.1); /* subtle hover effect, matches teal theme */
+  box-shadow: 0 8px 24px rgba(13, 43, 43, 0.1); 
 }
 
 .speaker-card img {
@@ -192,4 +192,107 @@ ul {
 .speaker-info p {
   color: var(--color-muted);
   font-size: 0.9rem;
+}
+.section-subtitle {
+  text-align: center;
+  color: var(--color-muted);
+  margin-bottom: 48px;
+}
+
+/* Pricing */
+.pricing-section {
+  padding: 60px 24px 120px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.pricing-card {
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.pricing-card-highlight {
+  background-color: var(--color-dark); 
+  color: white;
+  border: none;
+  transform: scale(1.03); 
+}
+
+.plan-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #999;
+  letter-spacing: 0.5px;
+}
+
+.pricing-card-highlight .plan-label {
+  color: var(--color-accent); 
+}
+
+.plan-price {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin: 10px 0 20px;
+  color: var(--color-dark);
+}
+
+.pricing-card-highlight .plan-price {
+  color: white;
+}
+
+.plan-price span {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #999;
+}
+
+.pricing-card-highlight .plan-price span {
+  color: #bbb;
+}
+
+.plan-features {
+  margin-bottom: 28px;
+}
+
+.plan-features li {
+  font-size: 0.9rem;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  position: relative;
+  padding-left: 18px;
+}
+
+.plan-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.pricing-card-highlight .plan-features li {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.btn-outline {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #ccc;
+  color: var(--color-dark);
+  padding: 12px 26px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.full-width {
+  width: 100%;
 }

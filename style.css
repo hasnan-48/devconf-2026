@@ -432,3 +432,54 @@ ul {
     padding: 14px 16px;
   }
 }
+/* Footer */
+.site-footer {
+  background-color: var(--color-dark);
+  padding: 32px 24px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-copyright {
+  color: #9ba3a3;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-links a {
+  color: #9ba3a3;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .speakers-grid { grid-template-columns: 1fr; }
+  .pricing-grid { grid-template-columns: 1fr; }
+  .pricing-card-highlight { transform: scale(1); } 
+  .hero h1 { font-size: 2.2rem; }
+  .footer-top { flex-direction: column; gap: 20px; text-align: center; }
+}
